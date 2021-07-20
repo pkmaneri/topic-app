@@ -1,0 +1,21 @@
+<form (submit)="handleSubmit($event)">
+    <div class="mb-3">
+      <label class="form-label">TopicName</label>
+      <input (keyup)="handleChange($event)" name="topicName"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">What</label>
+      <textarea (keyup)="handleChange($event)" name="what" class="form-control"></textarea>   
+    </div> 
+    <div class="mb-3">
+      <label class="form-label">When</label>
+      <textarea (keyup)="handleChange($event)" name="when" class="form-control"></textarea>     
+    </div> 
+    <div class="mb-3">
+      <label class="form-label">How</label>
+      <textarea (keyup)="handleChange($event)" name="how" class="form-control"></textarea>     
+    </div> 
+       <button  (click)="remove()">Delete</button>
+    <button type="submit" class="btn btn-primary">Submit</button>  
+  </form>
+  
